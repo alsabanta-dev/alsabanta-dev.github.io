@@ -121,7 +121,29 @@ p {
     background-size: 200% auto;
 }
 
-@keyframes gradient {
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(-120deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  }
+
+  /* Keyframes animations */
+  @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
