@@ -1,0 +1,32 @@
+# robots.txt for Alsabanta Adeeb Portfolio
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /*#*
+
+# Specific rules for Googlebot (can crawl more aggressively)
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Specific rules for other bots
+User-agent: *
+Crawl-delay: 1
+Request-rate: 1/10s
+
+# Sitemap location
+Sitemap: https://alsabanta-dev.github.io/sitemap.xml
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
